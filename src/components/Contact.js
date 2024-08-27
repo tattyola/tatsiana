@@ -15,7 +15,7 @@ const Contact = () => {
                     <form className="needs-validation" noValidate="">
                         <div className="row g-3">
                             <div className="col-12 text">
-                                <label htmlFor="firstName" className="form-label">First name</label>
+                                <label htmlFor="firstName" className="form-label">Your name</label>
                                 <input type="text" className="form-control" id="name" name="user_name" required
                                        placeholder=""/>
                                 <div className="invalid-feedback">
@@ -24,7 +24,7 @@ const Contact = () => {
                             </div>
 
                             <div className="col-12">
-                                <label htmlFor="email" className="form-label text">Email
+                                <label htmlFor="email" className="form-label text">Your email
                                 </label>
                                 <input type="email" className="form-control" id="email" name="user_email" required
                                        placeholder="you@example.com"/>
