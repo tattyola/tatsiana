@@ -111,7 +111,7 @@ const About = () => {
                         <div
                             className="feature-icon d-flex justify-content-center align-items-center bg-gradient fs-2 mb-3">
                             <img src={restApi}
-                                 className="bi" height="100px" height='100px' alt="REST APIs Icon" loading="lazy"
+                                 className="bi" height="100px" alt="REST APIs Icon" loading="lazy"
                             />
                         </div>
                         <p className="fs-5 text-body-emphasis text-center">REST APIs</p>

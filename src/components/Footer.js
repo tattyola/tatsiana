@@ -13,13 +13,13 @@ const Footer = () => {
                 <p className='text'>Designed with love, all rights reserved for Tatsiana Astrouskaya</p>
 
                 <ul className="nav justify-content-center list-unstyled d-flex">
-                    <li className="ms-3"><a className="text-body-secondary" href="#">
+                    <li className="ms-3"><a className="text-body-secondary" href="/">
                         <HiOutlineMail className="icon-color"/>
                     </a></li>
-                    <li className="ms-3"><a className="text-body-secondary" href="#">
+                    <li className="ms-3"><a className="text-body-secondary" href="/">
                         <BsGithub className="icon-color"/>
                     </a></li>
-                    <li className="ms-3"><a className="text-body-secondary" href="#">
+                    <li className="ms-3"><a className="text-body-secondary" href="/">
                         <FaLinkedin className="icon-color"/>
                     </a></li>
                 </ul>
