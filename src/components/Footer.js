@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="container footer">
             <footer
                 className="d-flex flex-column justify-content-center align-items-center py-3 my-4 border-top text-center">
-                <a className="mb-1 text link" href="#home">Tatsiana Astrouskaya</a>
+                <a className="mb-1 text link" href="/">Tatsiana Astrouskaya</a>
                 <p className='text'>Designed with love, all rights reserved for Tatsiana Astrouskaya</p>
 
                 <ul className="nav justify-content-center list-unstyled d-flex">
