@@ -12,11 +12,11 @@ const Contact = () => {
                 </div>
 
                 <div className="col-lg-6 col-md-12" id="form">
-                    <form className="needs-validation" noValidate="">
+                    <form action="https://formsubmit.co/d80f801c7e2feb5d0f3cfdd4d3c33f95" method="POST" className="needs-validation" noValidate="">
                         <div className="row g-3">
                             <div className="col-12 text">
                                 <label htmlFor="firstName" className="form-label">Your name</label>
-                                <input type="text" className="form-control" id="name" name="user_name" required
+                                <input type="name" name="name" className="form-control" id="name" required
                                        placeholder=""/>
                                 <div className="invalid-feedback">
                                     Valid first name is required.
@@ -26,8 +26,7 @@ const Contact = () => {
                             <div className="col-12">
                                 <label htmlFor="email" className="form-label text">Your email
                                 </label>
-                                <input type="email" className="form-control" id="email" name="user_email" required
-                                       placeholder="you@example.com"/>
+                                <input type="email" name="email" placeholder="Email Address" className="form-control" id="email" required/>
                                 <div className="invalid-feedback">
                                     Please enter a valid email address for shipping updates.
                                 </div>
@@ -44,7 +43,7 @@ const Contact = () => {
                             <div className="d-inline-flex gap-2 my-5">
                                 <button
                                     className="btn btn-primary btn-lg px-4 rounded-pill d-flex align-items-center justify-content-center"
-                                    type="button">
+                                    type="submit">
                                     Send
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                          className="bi bi-arrow-up-right" viewBox="0 0 16 16">
