@@ -2,6 +2,12 @@ import React from 'react';
 import TatsianaPhoto from '../images/Tatsiana Astrouskaya.png'
 
 const Home = () => {
+    const handlePdfClick = () => {
+        window.open('/FullStackDeveloper.pdf', '_blank');
+    };
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:tatty.astrouskaya@gmail.com';
+    };
     return (
         <div className='container' id='home'>
             <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -27,8 +33,8 @@ const Home = () => {
                     <h2 className='mt-4'>Software Developer</h2>
 
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
-                        <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Got a Project?</button>
-                        <button type="button" className="btn btn-outline-secondary btn-lg px-4">My Resume</button>
+                        <button onClick={handleEmailClick} type="button" className="btn btn-primary btn-lg px-4 me-md-2">Got a Project?</button>
+                        <button onClick={handlePdfClick} type="button" className="btn btn-outline-secondary btn-lg px-4">My Resume</button>
                     </div>
                 </div>
             </div>

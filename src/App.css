@@ -234,3 +234,8 @@ body {
 .footer a:hover {
     color: #263963;
 }
+
+.footer button {
+    border: none;
+    background-color: #F5EDED;
+}
