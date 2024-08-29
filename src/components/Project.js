@@ -13,7 +13,24 @@ import puzzle from "../images/projects/puzzle.png";
 import ticTacToe from "../images/projects/tic-tac-toe.png";
 import toDo from "../images/projects/toDo.png";
 
+const githubLinks = {
+    kanbanClient: 'https://github.com/tattyola/kanban-client',
+    kanbanServer: 'https://github.com/tattyola/kanban-server',
+    onlineStore: 'https://github.com/tattyola/online-store',
+    weather: 'https://github.com/tattyola/weather',
+    booking: 'https://github.com/tattyola/booking',
+    dragDrop: 'https://github.com/tattyola/drag-drop',
+    memory: 'https://github.com/tattyola/memory-game',
+    puzzle: 'https://github.com/tattyola/game-ts',
+    ticTacToe: 'https://github.com/tattyola/tic-tac-toe-react',
+    toDo: 'https://github.com/tattyola/todo'
+}
+
 const Project = () => {
+    const handleClick = (path) => {
+        window.location.href = `${path}`;
+    };
+
     return (
         <div className="container my-5" id="projects">
 
@@ -77,10 +94,13 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github Client</button>
-                                <button className="btn btn-outline-secondary" type="button">View Github Server</button>
+                                <button
+                                    onClick={() => handleClick(githubLinks.kanbanClient)}
+                                    className="btn btn-outline-secondary" type="button">View Github Client
+                                </button>
+                                <button onClick={() => handleClick(githubLinks.kanbanServer)} className="btn btn-outline-secondary" type="button">View Github Server</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -144,9 +164,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.onlineStore)}className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -195,9 +215,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.weather)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -248,9 +268,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.booking)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -300,9 +320,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.dragDrop)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -352,9 +372,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.memory)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -401,9 +421,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.puzzle)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -447,9 +467,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.ticTacToe)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -496,9 +516,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.toDo)} className="btn btn-outline-secondary" type="button">View Github</button>
 
-                                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" id='link'>
+                                <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
