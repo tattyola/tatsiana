@@ -13,8 +13,9 @@ import puzzle from "../images/projects/puzzle.png";
 import ticTacToe from "../images/projects/tic-tac-toe.png";
 import toDo from "../images/projects/toDo.png";
 
-const projects = {
-    kanban: {
+const projects = [
+    // kanban
+    {
         title: 'Kanban Client & Server',
         tools: ['JavaScript', 'HTML/CSS', 'React', 'Axios', 'Bootstrap', 'React-redux', 'Redux-thunk', 'ExpressJS', 'MongoDB'],
         images: [kanban1, kanban2],
@@ -30,7 +31,8 @@ const projects = {
         ],
         projects: {name: 'View Project', url: ''}
     },
-    onlineStore: {
+    // onlineStore
+    {
         title: 'Online Store App',
         tools: ['JavaScript', 'HTML/CSS', 'React', 'Bootstrap', 'Context', 'Router', 'LocalStorage'],
         images: [onlineStore1, onlineStore2],
@@ -38,7 +40,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/online-store'}],
         projects: {name: 'View Project', url: ''}
     },
-    weather: {
+    // weather
+    {
         title: 'Weather App',
         tools: ['JavaScript', 'HTML/CSS', 'React'],
         images: [weatherApp],
@@ -46,7 +49,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/weather'}],
         projects: {name: 'View Project', url: ''}
     },
-    booking: {
+    // booking
+    {
         title: 'Booking App',
         tools: ['JavaScript', 'HTML/CSS', 'React'],
         images: [booking1, booking2],
@@ -54,7 +58,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/booking'}],
         projects: {name: 'View Project', url: ''}
     },
-    dragDrop: {
+    //dragDrop
+    {
         title: 'Drag & Drop App',
         tools: ['JavaScript', 'HTML/CSS', 'React', 'MUI', 'React DnD'],
         images: [dragGrop],
@@ -62,7 +67,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/drag-drop'}],
         projects: {name: 'View Project', url: ''}
     },
-    memory: {
+    // memory
+    {
         title: 'Memory Game',
         tools: ['JavaScript', 'HTML/CSS', 'React', 'MUI', 'React DnD'],
         images: [memory],
@@ -70,7 +76,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/memory-game'}],
         projects: {name: 'View Project', url: ''}
     },
-    puzzle: {
+    // puzzle
+    {
         title: '15 Puzzle Game',
         tools: ['TypeScript', 'HTML/CSS', 'React', 'Zustand'],
         images: [puzzle],
@@ -78,7 +85,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/game-ts'}],
         projects: {name: 'View Project', url: ''}
     },
-    ticTacToe: {
+    // ticTacToe
+    {
         title: 'Tic-Tac-Toe Game',
         tools: ['JavaScript', 'HTML/CSS', 'React'],
         images: [ticTacToe],
@@ -86,7 +94,8 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/tic-tac-toe-react'}],
         projects: {name: 'View Project', url: ''}
     },
-    toDo: {
+    // to-do
+    {
         title: 'To Do App',
         tools: ['JavaScript', 'HTML/CSS', 'React'],
         images: [toDo],
@@ -94,7 +103,7 @@ const projects = {
         buttons: [{name: 'View GitHub', url: 'https://github.com/tattyola/todo'}],
         projects: {name: 'View Project', url: ''}
     }
-}
+]
 // Todo remove
 const githubLinks = {
     kanbanClient: 'https://github.com/tattyola/kanban-client',
@@ -181,7 +190,9 @@ const Project = () => {
                                     onClick={() => handleClick(githubLinks.kanbanClient)}
                                     className="btn btn-outline-secondary" type="button">View Github Client
                                 </button>
-                                <button onClick={() => handleClick(githubLinks.kanbanServer)} className="btn btn-outline-secondary" type="button">View Github Server</button>
+                                <button onClick={() => handleClick(githubLinks.kanbanServer)}
+                                        className="btn btn-outline-secondary" type="button">View Github Server
+                                </button>
 
                                 <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
@@ -197,6 +208,7 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
+
                 {/* online store*/}
                 <div className="row align-items-md-stretch mb-3 py-4">
                     <div className="col-md-5">
@@ -247,7 +259,9 @@ const Project = () => {
 
                             <div direction="horizontal" gap={2} className='d-flex flex-wrap gap-3 my-4'>
 
-                                <button onClick={() => handleClick(githubLinks.onlineStore)}className="btn btn-outline-secondary" type="button">View Github</button>
+                                <button onClick={() => handleClick(githubLinks.onlineStore)}
+                                        className="btn btn-outline-secondary" type="button">View Github
+                                </button>
 
                                 <a href="/" target="_blank" rel="noopener noreferrer" id='link'>
                                     View Project
