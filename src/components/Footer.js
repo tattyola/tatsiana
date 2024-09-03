@@ -18,15 +18,15 @@ const Footer = () => {
                 <p className='text'>Designed with love, all rights reserved for Tatsiana Astrouskaya</p>
 
                 <ul className="nav justify-content-center list-unstyled d-flex">
+                    <li>
+                        <a className="text-body-secondary" href="https://github.com/tattyola">
+                            <BsGithub className="icon-color"/>
+                        </a>
+                    </li>
                     <li className="ms-3">
                         <button className="text-body-secondary" onClick={handleEmailClick}>
                             <HiOutlineMail className="icon-color"/>
                         </button>
-                    </li>
-                    <li className="ms-3">
-                        <a className="text-body-secondary" href="https://github.com/tattyola">
-                            <BsGithub className="icon-color"/>
-                        </a>
                     </li>
                     <li className="ms-3">
                         <a className="text-body-secondary" href="https://www.linkedin.com/in/tatsiana-astrouskaya/">
