@@ -124,7 +124,7 @@ const Projects = () => {
                                     <img src={el}
                                          key={i}
                                          className="d-block mx-lg-auto img-fluid"
-                                         alt={`${project.title} image ${i + 1}`}
+                                         alt={`${project.title} screenshot ${i + 1}`}
                                          width="700" height="500" loading="lazy"
                                     />
                                 ))}
