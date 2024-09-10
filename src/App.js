@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Home from "./components/Home";
-import Project from "./components/Project";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
           <NavBar/>
           <Home/>
           <About/>
-          <Project/>
+          <Projects/>
           <Contact/>
           <Footer/>
       </div>
